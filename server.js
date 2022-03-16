@@ -17,9 +17,9 @@ app.use(logger)
 
 app.use(`/`,route)
 
-app.listen(port,(err) => {
+app.listen(process.env.port,(err) => {
     err? console.log(`server connected Failed`):
-    console.log(`server connected on ${port}`)
+    console.log(`server connected on ${process.env.port}`)
 })
 
 
